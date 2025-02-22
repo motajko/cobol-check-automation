@@ -18,7 +18,7 @@ jobs:
          ZOWE_PASSWORD: ${{ secrets.ZOWE_PASSWORD }}
        run: |
          echo "Running COBOL Check"
-         chmod +x .github/sdcripts/zowe_operations.sh
+         chmod +x .github/scripts/zowe_operations.sh
          .github/scripts/zowe_operations.sh
      - name: Run COBOL Check on Mainframe
        env:
